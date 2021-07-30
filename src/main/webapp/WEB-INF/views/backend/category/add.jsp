@@ -93,7 +93,7 @@
                                         <div class="form-group row">
                                             <label class="col-lg-2 col-form-label" for="description">Mô tả<span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <form:textarea rows="3" path="description" required="true" id="description" name="description" class="form-control" placeholder="Mô tả ....."/>
+                                                <form:textarea rows="3" path="description" required="true" id="description" name="description" class="form-control" placeholder="Mô tả thể loại ....."/>
                                                 <form:errors path="description" cssClass="error"/>
                                             </div>
                                         </div>

@@ -105,7 +105,7 @@
                                             </div>
                                         </div>
                                         <div class="form-group row">
-                                            <label class="col-lg-2 col-form-label"for="">Nhóm người dùng<span class="text-danger">*</span></label>
+                                            <label class="col-lg-2 col-form-label" for="">Nhóm người dùng<span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
                                                 <form:select class="js-example-basic-single form-control select2-input" path="role" id="addRole"  name="role">
                                                     <form:option value="1">Khách hàng</form:option>

@@ -100,7 +100,7 @@
                                         <tbody>
                                         <c:forEach items="${products}" var="product" varStatus="s">
                                             <tr>
-                                                <td scope="row">${start + s.index+1}</td>
+                                                <td scope="row">${s.index+1}</td>
                                                 <td>${product.name}</td>
                                                 <td><img src="<%=addressImage%>${product.imgPoster}" style="width: 200px"></td>
                                                 <td>

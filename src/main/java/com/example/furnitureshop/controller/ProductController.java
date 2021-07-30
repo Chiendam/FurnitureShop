@@ -29,15 +29,6 @@ public class ProductController {
     @Autowired
     private ICategoryService iCategoryService;
 
-//    @GetMapping(value = "/")
-//    public String getAllProduct(Model model){
-//        List<Product> products = iProductService.getAll();
-//        List<Category> categories = iCategoryService.getAllCategory();
-//        model.addAttribute("products", products);
-//        model.addAttribute("categories",categories);
-//        return "backend/product/index";
-//    }
-
     @GetMapping(value = "/")
     public String getAllProduct(Model model, @RequestParam(value = "search", required = false) String keySearch, @RequestParam(value = "page", required = false) Integer pageCurrent){
         String strParam = keySearch == null ? "?" : "?search="+keySearch+"&";

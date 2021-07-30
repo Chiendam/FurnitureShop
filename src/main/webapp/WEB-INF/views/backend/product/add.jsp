@@ -135,7 +135,7 @@
                                         <div class="form-group row">
                                             <label class="col-lg-2 col-form-label" for="description">Mô tả sản phẩm<span class="text-danger">*</span></label>
                                             <div class="col-lg-8">
-                                                <form:textarea rows="6" path="description" name="description" class="form-control" placeholder="Mô tả ....." />
+                                                <form:textarea rows="6" path="description" name="description" class="form-control" placeholder="Mô tả thêm về sản phẩm ....." />
                                                 <form:errors path="description" cssClass="error"/>
                                             </div>
                                         </div>

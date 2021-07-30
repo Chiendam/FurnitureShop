@@ -17,7 +17,6 @@ import org.springframework.web.servlet.view.RedirectView;
 import java.util.List;
 
 @Controller
-//@RestController
 @RequestMapping(value = "/admin/user")
 public class UserController {
     @Autowired
