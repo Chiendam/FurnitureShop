@@ -100,7 +100,7 @@
                                         <tbody>
                                         <c:forEach items="${products}" var="product" varStatus="s">
                                             <tr>
-                                                <td scope="row">${s.index+1}</td>
+                                                <td scope="row">${start+s.index+1}</td>
                                                 <td>${product.name}</td>
                                                 <td><img src="<%=addressImage%>${product.imgPoster}" style="width: 200px"></td>
                                                 <td>
@@ -146,7 +146,10 @@
                                     </li>
                                 </c:if>
                                 <c:forEach var="page" begin="1" end="${numberPage}">
-                                    <c:if test="${page < 7}">
+                                    <c:if test="${pageNow == page}">
+                                        <li class="page-item disabled"><a class="page-link" style="background-color: gainsboro;" href="<%=basePath%>/${parameter}page=${page}">${page}</a></li>
+                                    </c:if>
+                                    <c:if test="${pageNow != page}">
                                         <li class="page-item"><a class="page-link" href="<%=basePath%>/${parameter}page=${page}">${page}</a></li>
                                     </c:if>
                                 </c:forEach>
