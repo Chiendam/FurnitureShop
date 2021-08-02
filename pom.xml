@@ -80,6 +80,8 @@
                             <artifactId>lombok</artifactId>
                         </exclude>
                     </excludes>
+
+                    <addResources>true</addResources>
                 </configuration>
             </plugin>
         </plugins>
